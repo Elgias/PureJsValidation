@@ -1,0 +1,141 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body div
+{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 15px  0px ;
+    height: 40px;
+}
+
+form 
+{
+    padding: 35px;
+    background-color: rgb(228, 228, 228);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 430px;
+    height: auto;
+}
+
+.input-field
+{
+    position: relative;
+}
+
+input[type=text], 
+input[type=password],
+input[type=email]
+{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #999999;
+    background-color: rgba(0, 0, 0, 0);
+
+    transition: border 0.2s ease-in-out;
+    font-size: 18px;
+    width: 100%;
+}
+
+.input-field > label 
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type=checkbox] + label
+{
+    font-size: 14px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus
+{
+    border-bottom: 2px solid rgb(71, 71, 71);
+}
+
+.input-field > input[type=text]:focus + label,
+.input-field > input[type=password]:focus + label,
+.input-field > input[type=email]:focus + label
+{
+    transform: translateY(-25px);
+    font-size: 14px;
+    background-color: rgb(46, 46, 46);
+    padding: 3px 8px;
+    color: rgb(212, 212, 212);
+}
+
+button[type="submit"]
+{
+    padding: 10px 20px 10px 20px;
+    min-width: min-content;
+    max-width: max-content;
+    align-self: center;
+}
+
+.input-field > input.valid
+{
+    border-bottom: 2px solid rgb(38, 158, 58);
+}
+
+.input-field > input.valid + label
+{
+    transform: translateY(-25px);
+    font-size: 14px;
+    background-color: rgb(35, 143, 53);
+    padding: 3px 8px 3px 8px;
+    color: rgb(212, 212, 212);
+}
+
+.input-field > input.valid:focus
+{
+    border-bottom: 2px solid rgb(81, 182, 98);
+}
+
+.input-field > input.valid:focus + label
+{
+    background-color: rgb(35, 143, 53);
+}
+
+/*Invalid filed*/
+.input-field > input.invalid
+{
+    border-bottom: 2px solid rgb(204, 41, 55);
+}
+
+.input-field > input.invalid + label
+{
+    transform: translateY(-25px);
+    font-size: 14px;
+    background-color:  rgb(204, 41, 55);
+    padding: 3px 8px;
+    color: rgb(212, 212, 212);
+}
+
+.input-field > input.invalid:focus
+{
+    border-bottom: 2px solid rgb(228, 52, 67);
+}
+
+.input-field > input.invalid:focus + label
+{
+    transform: translateY(-25px);
+    font-size: 14px;
+    background-color: rgb(228, 52, 67);
+    padding: 3px 8px;
+    color: rgb(212, 212, 212);
+}
+/*end*/
+
+

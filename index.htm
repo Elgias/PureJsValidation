@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script defer type="module" src="validations.js"></script>
+  <script defer type="module" src="script.js"></script>
+</head>
+<body>
+  <form id="form" method="post">
+    <div class="input-field">
+      <input type="text" tabindex="1" name="firstName" id="firstName">
+      <label>Имя</label>
+    </div>
+    <div class="input-field">
+      <input type="text" tabindex="2" name="lastName" id="lastName">
+      <label >Фамилия</label>
+    </div>
+    <div>
+      <label>
+        Пол
+        <input type="radio" tabindex="3" name="sex" id="sexMale" value="male">
+        <label for="sexMale">М</label>
+        <input type="radio" tabindex="3" name="sex" id="sexFemale" value="female">
+        <label for="sexFemale">Ж</label>
+      </label>
+    </div>
+    <div>
+      <label>Дата рождения</label>
+      <input type="date">
+    </div>
+    <div class="input-field">
+      <input type="email" tabindex="4" name="email" id="email">
+      <label for="email">Email</label>
+    </div>
+    <div class="input-field">
+      <input type="password" tabindex="5" name="password" id="password">
+      <label>Пароль</label>
+    </div>
+    <div class="input-field">
+      <input type="password" tabindex="6" name="passwordRepeat" id="passwordRepeat">
+      <label>Повтор пароля</label>
+    </div>
+    <div>
+      <input type="checkbox" tabindex="8" name="agreerules" id="agreeRules">
+      <label for="agreeRules">Согласен с правилами использования</label>
+    </div>
+    <button type="submit" tabindex="9">Зарегестрироваться</button>
+  </form>
+</body>
+</html>
